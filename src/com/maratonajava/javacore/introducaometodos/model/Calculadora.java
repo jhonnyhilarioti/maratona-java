@@ -24,4 +24,23 @@ public class Calculadora {
 		}
 		return num1 / num2;
 	}
+	
+	public void somaArray(int[] numeros) {
+		int soma = 0;
+		for (int i : numeros) {
+			soma += i;
+		}
+		System.out.println(soma);
+	}
+	/**
+	 * O varargs é um facilitador, ao invés de criar um array ou lista e colocar os valores dentro dele para depois chamar o método,
+	 * o mesmo pode ser chamado diretamente passando os n valores e os parâmetros enviados são automaticamente adicionados em um array do mesmo tipo do varargs.
+	 */
+	public void somaVarargs(int... numeros) {
+		int soma = 0;
+		for (int i : numeros) {
+			soma += i;
+		}
+		System.out.println(soma);
+	}
 }

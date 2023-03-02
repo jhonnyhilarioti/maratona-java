@@ -22,5 +22,10 @@ public class CalculadoraTest {
 		System.out.println("----------------");
 
 		System.out.println(calculadora.calculaDivisao(0, 10));
+		System.out.println("----------------");
+		
+		int[] valores = new int[] {2,2,2};
+		calculadora.somaArray(valores);
+		calculadora.somaVarargs(2,2,2,2,2,2,2);
 	}
 }
