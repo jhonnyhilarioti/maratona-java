@@ -26,6 +26,8 @@ public class HerancaTest {
 		System.out.println("-------------");
 		pessoa.imprime();
 		System.out.println("-------------");
+		System.out.println("-------------");
+		funcionario.relatoriaPagamento();
 
 	}
 }
