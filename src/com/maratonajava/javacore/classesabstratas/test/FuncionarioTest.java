@@ -13,5 +13,7 @@ public class FuncionarioTest {
 		System.out.println(funcionario);
 		System.out.println(gerente);
 		System.out.println(dev);
+		
+		dev.imprime();
 	}
 }
