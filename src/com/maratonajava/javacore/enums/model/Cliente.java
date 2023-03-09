@@ -1,14 +1,10 @@
 package com.maratonajava.javacore.enums.model;
 
 public class Cliente {
-	public enum TipoPagamento{
-		DEBITO,
-		CREDITO
-	}
 	private String nome;
 	private TipoPessoa tipoPessoa;
 	private TipoPagamento tipoPagamento;
-	
+
 	public Cliente() {
 
 	}
@@ -17,9 +13,9 @@ public class Cliente {
 		this.nome = nome;
 		this.tipoPessoa = tipoPessoa;
 	}
-	
+
 	public Cliente(String nome, TipoPessoa tipoPessoa, TipoPagamento tipoPagamento) {
-		this(nome,tipoPessoa);
+		this(nome, tipoPessoa);
 		this.tipoPagamento = tipoPagamento;
 	}
 
@@ -27,7 +23,7 @@ public class Cliente {
 	public String toString() {
 		return "Cliente [nome=" + nome + 
 			   ", tipoPessoa=" + tipoPessoa.getNomeRelatorio() + 
-			   ", tipoPessoaInt=" + tipoPessoa.getValor()  + 
+			   ", tipoPessoaInt=" + tipoPessoa.getValor() + 
 			   ", tipoPagamento=" + tipoPagamento + "]";
 	}
 
@@ -54,7 +50,5 @@ public class Cliente {
 	public void setTipoPagamento(TipoPagamento tipoPagamento) {
 		this.tipoPagamento = tipoPagamento;
 	}
-	
-	
 
 }
