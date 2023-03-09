@@ -13,6 +13,9 @@ public class DataLoaderTest {
 
 		database.remover();
 		file.remover();
+		
+		database.checkPermission();
+		file.checkPermission();
 	}
 
 }
