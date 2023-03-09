@@ -25,7 +25,10 @@ public class Cliente {
 
 	@Override
 	public String toString() {
-		return "Cliente [nome=" + nome + ", tipoPessoa=" + tipoPessoa + ", tipoPagamento=" + tipoPagamento + "]";
+		return "Cliente [nome=" + nome + 
+			   ", tipoPessoa=" + tipoPessoa.getNomeRelatorio() + 
+			   ", tipoPessoaInt=" + tipoPessoa.getValor()  + 
+			   ", tipoPagamento=" + tipoPagamento + "]";
 	}
 
 	public String getNome() {
