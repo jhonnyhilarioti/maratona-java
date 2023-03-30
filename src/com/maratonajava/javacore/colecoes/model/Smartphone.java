@@ -36,7 +36,22 @@ public class Smartphone {
 		//return serialNumber != null && serialNumber.equals(smartphone.serialNumber);
 		return Objects.equals(marca, smartphone.marca) && Objects.equals(serialNumber, smartphone.serialNumber);
 	}
-
+	
+	/**
+	 * O códigos de hashing são geralmente utilizados para determinar em qual local, 
+	 * no conjunto, ele deve ser armazenado. Sendo, 
+	 * posteriormente, utilizado para fazer uma pesquisa dentro do próprio conjunto. 
+	 * Uma forma bastante comum de se utilizar o hashCode é definindo um número para cada letra do 
+	 * Alfabeto (A=1, B=2, C=3 e etc..). Ao ser fornecido um nome, 
+	 * o algorítmo irá calcular a multiplicação dos números referentes a letras e irá retornar um hashCode 
+	 * daquele nome, em específico.
+	 */
+	@Override
+	public int hashCode() {
+		//return serialNumber == null ? 0 : this.serialNumber.hashCode();
+		return Objects.hash(marca, serialNumber);
+	}
+	
 	public String getSerialNumber() {
 		return serialNumber;
 	}
